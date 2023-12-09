@@ -70,25 +70,6 @@ export const CityTabs = () => {
           </Box>
         </CustomTabPanel>
       ))}
-      {/* <CustomTabPanel value={value} index={0}>
-       
-        <Box sx={{ display: "flex", gap: "20px" }}>
-          <WeatherBox localWeather="London,uk"/>
-          <TextDescription description={cities.description} educationalHub={cities.educationalHub} technologyIndustry={cities.technologyIndustry} metroSystem={cities.metroSystem}/>
-        </Box>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
-        <Box sx={{ display: "flex", gap: "20px" }}>
-          <WeatherBox localWeather="Kharkiv,ua"/>
-          <TextDescription description={cities.description} educationalHub={cities.educationalHub} technologyIndustry={cities.technologyIndustry} metroSystem={cities.metroSystem}/>
-        </Box>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
-        <Box sx={{ display: "flex", gap: "20px" }}>
-          <WeatherBox localWeather="New York,us"/>
-            <TextDescription description={cities.description} educationalHub={cities.educationalHub} technologyIndustry={cities.technologyIndustry} metroSystem={cities.metroSystem}/>
-        </Box>
-      </CustomTabPanel> */}
     </Box>
   );
 };

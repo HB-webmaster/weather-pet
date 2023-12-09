@@ -54,7 +54,7 @@ export const WeatherBox = ({ localWeather }: { localWeather: string }) => {
       .catch((error) => {
         console.error("There was a problem with the fetch operation:", error);
       });
-  }, []);
+  }, [apiUrl]);
 
   return (
     <>
