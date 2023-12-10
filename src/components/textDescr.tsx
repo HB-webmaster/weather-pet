@@ -10,7 +10,6 @@ interface TextData {
 export const TextDescription = ({description, educationalHub, technologyIndustry, metroSystem}: TextData) => {
   return (
     <Box sx={{ width: "75%", mt: "25px" }}>
-        <Box>
           <Typography variant="body1" gutterBottom>
             {description}
           </Typography>
@@ -32,7 +31,6 @@ export const TextDescription = ({description, educationalHub, technologyIndustry
           <Typography variant="body1" gutterBottom>
             {metroSystem}
           </Typography>
-        </Box>
     </Box>
   );
 };

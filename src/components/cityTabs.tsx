@@ -23,7 +23,7 @@ function CustomTabPanel(props: TabPanelProps) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Box>{children}</Box>
         </Box>
       )}
     </div>
@@ -52,7 +52,7 @@ export const CityTabs = () => {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-             {cities.map((city, index) => (
+          {cities.map((city, index) => (
             <Tab key={index} label={city.cityName} {...a11yProps(index)} />
           ))}
         </Tabs>
@@ -60,7 +60,9 @@ export const CityTabs = () => {
       {cities.map((city, index) => (
         <CustomTabPanel key={index} value={value} index={index}>
           <Box sx={{ display: "flex", gap: "40px" }}>
-            <WeatherBox localWeather={`${city.cityName.toLowerCase()},${city.cityCode}`} />
+            <WeatherBox
+              localWeather={`${city.cityName.toLowerCase()},${city.cityCode}`}
+            />
             <TextDescription
               description={city.description}
               educationalHub={city.educationalHub}
